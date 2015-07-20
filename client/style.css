@@ -79,6 +79,9 @@ body {
 .chat-message {
   padding: 10px 0px;
 }
+.chat-message pre {
+  text-align: left;
+}
 .message-avatar {
   /*height: 48px;
   width: 48px;*/
