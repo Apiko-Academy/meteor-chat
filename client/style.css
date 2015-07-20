@@ -173,6 +173,10 @@ body > .dropdown-menu {
   bottom: 76px !important;
 }
 
+body > .container-fluid {
+  overflow: hidden;
+}
+
 .textarea-avatar {
   z-index: 100;
   position: fixed;
