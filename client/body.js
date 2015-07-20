@@ -19,8 +19,4 @@ Template.body.helpers({
 
 Template.body.onRendered(function () {
   var self = this;
-  self.autorun(function () {
-    Messages.find();
-    $('.chat-discussion').scrollTop(Infinity);
-  });
 });
