@@ -9,3 +9,7 @@ Template.ChatMessage.helpers({
     return Meteor.userId() === this.userId ? 'right' : 'left'
   }
 });
+
+Template.ChatMessage.onRendered(function () {
+  $('.chat-discussion').scrollTop(Infinity);
+});
