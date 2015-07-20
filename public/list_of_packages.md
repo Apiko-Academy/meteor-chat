@@ -6,4 +6,4 @@ mquandalle:jquery-textcomplete
 reactive-var  
 seriousm:emoji-continued      
 twbs:bootstrap                  
-utilities:avatar         
+utilities:avatar    

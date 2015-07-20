@@ -28,6 +28,7 @@ body {
 /* Chat view */
 .message-input {
   height: 90px !important;
+  padding: 16px 16px 16px 80px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -76,7 +77,7 @@ body {
   padding: 0;
 }
 .chat-message {
-  padding: 10px 20px;
+  padding: 10px 0px;
 }
 .message-avatar {
   /*height: 48px;
@@ -124,6 +125,7 @@ body {
   display: block;
 }
 .chat-discussion {
+  width: 100%;
   background: #eee;
   padding: 15px;
   height: 400px;
@@ -157,4 +159,26 @@ input[type="text"], textarea {
 .emoji {
   height: 20px;
   vertical-align: sub;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+body > .dropdown-menu {
+  top: auto !important;
+  bottom: 76px !important;
+}
+
+.textarea-avatar {
+  z-index: 100;
+  position: fixed;
+  left: 14px;
+  bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .chat-users {
+    display: none;
+  }
 }
