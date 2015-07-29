@@ -18,10 +18,12 @@
 
                 <div class="col-md-9 ">
                   <div class="chat-discussion">
-                    {{#each messages}}
-                      <!-- MESSAGE CONTEXT -->
-                      {{> ChatMessage}}
-                    {{/each}}
+                    <div class="messages-wrapper">
+                      {{#each messages}}
+                        <!-- MESSAGE CONTEXT -->
+                        {{> ChatMessage}}
+                      {{/each}}
+                    </div>
                   </div>
 
                 </div>

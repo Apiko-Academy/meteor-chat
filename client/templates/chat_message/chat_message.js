@@ -11,5 +11,8 @@ Template.ChatMessage.helpers({
 });
 
 Template.ChatMessage.onRendered(function () {
-  $('.chat-discussion').scrollTop(Infinity);
+  var self = this;
+  var $scrollable = self.$('.chat-message').closest('.chat-discussion');
+  var $messages = self.$('.chat-message').closest('.messages-wrapper');
+  $scrollable.scrollTop($messages.height());
 });
